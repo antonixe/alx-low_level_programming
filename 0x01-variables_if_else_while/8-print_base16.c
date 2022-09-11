@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - main
@@ -8,17 +7,17 @@
  */
 int main(void)
 {
-	char d = '0';
+	int z;
 
-	while (d <= '9')
+	for (z = 48; z <= 57; z++)
 	{
-		putchar(d);
-		d++;
+		putchar(z);
+	
 	}
 
-	char c = 'a';
+	for (z = 97; z <= 102;z++)
 
-	while (c <= 'f')
+	while (c <= '
 	{
 		putchar(c);
 		c++;
