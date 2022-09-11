@@ -7,23 +7,22 @@
  */
 int main(void)
 {
-	int i, j;
+	char c = 'a';
 
-	j = 65;
-
-	while (i < 123)
+	while (c <= 'z')
 	{
-		putchar(i);
-		i++;
+		putchar(c);
+		c++;
 	}
 
-	while (j < 91)
+	c = 'A';
+
+	while (c <= 'Z')
 	{
-		putchar(j);
-		j++;
+		putchar(c);
+		c++;
 	}
 
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }
