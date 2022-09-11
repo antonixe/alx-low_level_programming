@@ -8,6 +8,7 @@
 int main(void)
 {
 	int i, j;
+
 	j = 65;
 
 	while (i < 123)
@@ -23,5 +24,6 @@ int main(void)
 	}
 
 	putchar(10);
+
 	return (0);
 }
