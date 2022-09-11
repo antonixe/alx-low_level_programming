@@ -1,28 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - main
- * Description: single digit numbers of base 10
+ * main - Entry point
+ * Description: base 16
  * Return: 0
  */
 int main(void)
 {
-	int z;
+	int r;
 
-	for (z = 48; z <= 57; z++)
+	for (r = 0; r <= 9; r++)
 	{
-		putchar(z);
-	
+		printf("%d", r);
 	}
-
-	for (z = 97; z <= 102;z++)
-
-	while (c <= '
-	{
-		putchar(c);
-		c++;
-	}
-
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
