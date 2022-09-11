@@ -7,12 +7,19 @@
  */
 int main(void)
 {
-	int r;
+	char ch;
 
-	for (r = 0; r <= 9; r++)
+	int n;
+
+	for (n = 48; n <= 57; n++)
 	{
-		printf("%d", r);
+		putchar(n);
 	}
-	printf("\n");
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar(10);
+
 	return (0);
 }
