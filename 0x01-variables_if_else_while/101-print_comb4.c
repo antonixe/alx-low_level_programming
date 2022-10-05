@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - main
  * Description: possible different combinations
@@ -7,34 +7,24 @@
  */
 int main(void)
 {
-	int n, m, l
 
-	for (n = 48; n < 58; n++)
+       	int i, j, k;
+
+       	for (i = 0; i <= 9; i++) 
 	{
-		for (m = 49; m < 58; m++)
+	       	for (j = i+1; j <= 9; j++) 
 		{
-			for (l = 50; l < 58; l++)
+			for (k = j+1; k <= 9; k++
 			{
-				if (l > m && m > n)
-				{
-					putchar(n);
-
-					putchar(m);
-
-					putchar(l);
-
-					if (n != 55 || m != 56)
-					{
-						putchar(',');
-
-						putchar(' ');
-					}
-				}
+	
+		       	printf("%d%d%d\n", i, j, k);
 			}
 		}
 	}
-
-	putchar('\n');
-
-	return (0);
 }
+
+
+
+
+
+
