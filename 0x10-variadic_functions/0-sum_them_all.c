@@ -1,26 +1,18 @@
-#include <stdarg.h>
+#include <stdio.h>
+#include "variadic_functions.h"
 
 /**
- * sum_them_all - adds all the parameters
- * @n: sum of input variables
+ * main - check the code for Holberton School students.
  *
- * Return: the sum
+ * Return: Always 0.
  */
-
-int sum_them_all(const unsigned int n, ...)
+int main(void)
 {
-	va_list ap;
-	unsigned int p, sum = 0;
+	int sum;
 
-	/* initialize the argument list from the start */
-	va_start(ap, n);
-
-	/* iterate through all parameter values*/
-	for (p = 0; p < n; p++)
-		/* get the next parameter velue and add it to sum*/
-		sum += va_arg(ap, int);
-	/*Clean up*/
-	va_end(ap);
-
-	return (sum);
+	sum = sum_them_all(2, 98, 1024);
+	printf("%d\n", sum);
+	sum = sum_them_all(4, 98, 1024, 402, -1024);
+	printf("%d\n", sum);
+	return (0);
 }
